@@ -56,3 +56,17 @@ Entretanto, mesmo a memória virtual não está totalmente disponível para um p
 
 Verifique o código em `alocacao-dinamica.c` para conhecer mais sobre as funções e procedimentos de manipulação da memória virtual. 
 
+## 3. PONTEIROS E FUNÇÕES
+> Os códigos conterão algumas marcações especiais, como "///" e "@". Isso é um detalhe que não será renderizado no GitHub, mas é muito útil para descrever o comportamento de uma função; então, quando você "documenta" ela dessa forma, ao passar o *mouse* por cima posteriormente, você consegue analisar as mensagens que escreveu e se lembrar de qual o comportamento dela. Fica a dica.
+
+### 3.1 PASSAGEM DE PARÂMETROS
+Ao utilizar uma função, nós podemos passar tanto o **valor** quanto a **referência**; na linguagem C, não há maneiras de passar uma referência como parâmetro (como em C++), mas é possível emulá-la. Verifique o código em `parametros.c` para mais detalhes.
+
+### 3.2 VETORES COMO PARÂMETROS
+Uma das melhores maneiras de passar vetores para funções é com o uso de ponteiros; vale salientar que, mesmo que não usemos ponteiros, ainda sim é passado o endereço de memória base onde começa o vetor. Verifique `vetor-parametros.c` para uma utilização básica.
+
+### 3.3 RETORNOS MÚLTIPLOS
+Se você tem uma função que deseja retornar mais de um valor, é possível usar os ponteiros para fazer com que a função obedeça a esse comportamento. Veja como fazer isso no arquivo `multiplos-retornos.c`. 
+
+## 4. PONTEIRO PARA VOID
+Além de todas as utilizações dos ponteiros, ainda podemos declarar um ponteiro do tipo `void`; isso é excepcionalmente útil para casos em que não sabemos o tipo que a variável irá assumir. Logo, podemos criar funções e variáveis genéricas. Verifique `ponteiro-void` para entender o comportamento.
